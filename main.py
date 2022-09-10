@@ -20,6 +20,8 @@ def home():
         c.execute(transaction)
         conn.commit()
 
+# by removing and replacing the single quotes, we're preventing a SQL injection attack
+
     body = """
 <html>
 <body>
